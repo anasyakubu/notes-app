@@ -5,7 +5,7 @@ import LoginCardForm from "@/app/sections/LoginCardForm/LoginCardForm";
 
 const Login = () => {
   return (
-    <div className="Login bg-gray-950">
+    <div className="Login bg-gray-900">
       <div className="lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-0">
         <div className="p-5 LoginCardDiv">
           <LoginCard />
