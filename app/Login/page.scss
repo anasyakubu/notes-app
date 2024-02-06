@@ -1,0 +1,29 @@
+ .Login {
+  // background-color: #090a0b;
+  // background-color: #1f2b3e;
+  color: #f4f4f4;
+  height: 100vh;
+ }
+
+
+ @media (max-width: 600px) {
+  .Login {
+    height: 100vh;
+
+    .p-5 {
+      padding: 0;
+    }
+
+    .LoginCardDiv {
+      display: none;
+    }
+
+    // .h-screen {
+    //   height: 100vh;
+    // }
+
+    .LoginCardFormDiv {
+      padding: 1%;
+    }
+  }
+ }

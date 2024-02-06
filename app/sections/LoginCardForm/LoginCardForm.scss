@@ -1,0 +1,26 @@
+.LoginCardForm {
+  .btn {
+    transition: 0.4s;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .LoginCardForm {
+    padding-top: 0;
+    margin-top: 0;
+
+    button {
+      padding: 2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
+}
