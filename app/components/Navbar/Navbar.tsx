@@ -3,19 +3,24 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 
-const navigation = [
+type NavigationItem = {
+  name: string;
+  href: string;
+  current: boolean;
+};
+
+const navigation: NavigationItem[] = [
   { name: "Dashboard", href: "#", current: true },
   { name: "Team", href: "#", current: false },
   { name: "Projects", href: "#", current: false },
   { name: "Calendar", href: "#", current: false },
 ];
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
-s;
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <div>
       <Disclosure as="nav" className="bg-gray-800">
